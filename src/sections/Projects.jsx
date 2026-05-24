@@ -3,12 +3,36 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "lorem ipsum",
+    title: "BulSU COE Alumni Tracker Website",
+    description: "The website is a responsive web application developed as a project in Web Engineering, designed with a simple and intuitive UI for redirecting alumni forms. It provides essential information about Bulacan State University College of Engineering while integrating thoughtful UI/UX design principles and implemented using React.js and TypeScript.",
     image: "/projects/project-1.png",
-    tags: ["React", "TypeScript", "NodeJS"],
-    link: "#",
-    github: "#",
+    tags: ["React.js", "TypeScript", "NodeJS"],
+    link: "https://bsu-alumni-tracker.vercel.app/",
+    github: "https://github.com/neozeph/bsu-alumni-tracker",
+  },
+  {
+    title: "DevOps CSV Automation",
+    description: "The DevOps CSV Automation project is an automated data processing pipeline for CSV files designed to streamline ingestion, cleaning, formatting, and visualization of raw sales data. It demonstrates a complete DevOps lifecycle through CI/CD integration, automated testing, linting, security scanning, and GitHub Actions-based automation for continuous data updates. The system reduces manual processing effort and errors while improving data quality, enabling faster and more reliable data-driven decision-making for analytics workflows.",
+    image: "/projects/project-2.png",
+    tags: ["Python", "CSV Handling", "Automation", "GitHub Actions"],
+    link: "https://github.com/neozeph/devops-csv-automation/tree/main/output",
+    github: "https://github.com/neozeph/devops-csv-automation",
+  },
+  {
+    title: "SkyLinx: Flight Booking App",
+    description: "The mobile application is a flight booking platform designed with a smooth and responsive user interface, featuring intuitive layouts and navigation to enhance the overall user experience for searching, booking, and managing flights.",
+    image: "/projects/project-3.png",
+    tags: ["Flutter", "Dart", "Firebase",],
+    link: "https://bsu-alumni-tracker.vercel.app/",
+    github: "https://github.com/neozeph/bsu-alumni-tracker",
+  },
+  {
+    title: "ROKI: Room Checker",
+    description: "The project is a room-checking system mockup for the College of Engineering, designed in Wix Studio as part of a Software Design project, featuring a user-friendly interface for monitoring and managing room availability.",
+    image: "/projects/project-4.png",
+    tags: ["Wix Studio",],
+    link: "https://filesofjosef.wixstudio.com/softwaredesign",
+    github: "https://filesofjosef.wixstudio.com/softwaredesign",
   },
 ];
 
@@ -25,15 +49,14 @@ export const Projects = () => {
             Featured Works
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            Projects that
+            Projects driven
             <span className="font-serif italic font-normal text-white">
               {" "}
-              make an impact.
+              by curiosity and innovation.
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A selection of my recent work, from complex web applications to
-            innovative tools that solve real-world problems.
+            A growing collection of software, systems, and ideas designed to create meaningful experiences and impact.
           </p>
         </div>
 

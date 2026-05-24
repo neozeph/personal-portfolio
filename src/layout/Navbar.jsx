@@ -6,7 +6,7 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#certifications", label: "Certifications" },
 ];
 
 export const Navbar = () => {
@@ -52,7 +52,9 @@ export const Navbar = () => {
 
         {/* CTA BUTTON */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <Button size="sm" onClick={() => (window.location.href = "#contact")}>
+            Contact Me
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -79,7 +81,14 @@ export const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Button>
+            <Button
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                window.location.href = "#contact";
+              }}
+            >
+              Contact Me
+            </Button>
           </div>
         </div>
       )}

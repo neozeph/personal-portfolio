@@ -13,23 +13,27 @@ const skills = [
   "Next.js",
   "TypeScript",
   "Node.js",
-  "GraphQL",
+  "MySQL",
   "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
   "Vercel",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
   "Figma",
   "Git",
   "GitHub Actions",
+  "C++",
+  "Python",
+  "Java",
+  "Flutter",
+  "Dart",
+  "HTML",
+  "CSS",
+  "Javascript",
+  "PHP",
+  "Firebase",
 ];
 
 export const Hero = () => {
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden ">
       {/* Background */}
@@ -65,41 +69,42 @@ export const Hero = () => {
           {/* Left column - Text Content */}
           <div className="space-y-8 ">
             <div className="animate-fade-in ">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer | React Specialist
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary hover:bg-primary/60 hover:text-white">
+                <span className="w-2 h-2 bg-primary rounded-full animate-pulse " />
+                Computer Engineer | Web Developer | Data Science & CyberSec Enthusiast
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-200">
-                Crafting <span className="text-primary glow-text">digital</span>
+              <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
+                Creating <span className="text-primary glow-text">systems</span>
                 <br />
-                experiences with
+                with clean and 
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  precision.
+                  thoughtful design.
                 </span>
               </h1>
 
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
-                Hi, I am Josef Alanrey - a software engineer specializing in
-                React, Next.js, and Typescript. I build scalable, performant web
-                applications that users love.
+                Hello, I’m <span className="text-white/90 text-bold">Josef Alanrey Soriente</span> — a Computer Engineer passionate about building practical and user-centered software solutions with React, Flutter, and Python, 
+                while continuously exploring cybersecurity, cloud, and software development.
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
-              <Button size="lg">
+              <Button size="lg" onClick={() => (window.location.href = "#contact")}>
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
 
+            <a href="/Josef_Alanrey_CV.pdf" download="Josef_Alanrey_CV.pdf">
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
+            </a>
             </div>
 
             {/* Social Links */}
@@ -166,7 +171,7 @@ export const Hero = () => {
 
         {/* Skills Section */}
         <div className="mt-20 animate-fade-in animation-delay-600">
-          <p className="text-lg text-primary mb-6 text-center">Technologies</p>
+          <p className="text-lg text-primary mb-6 text-center uppercase">Technologies</p>
           <div className="relative overflow-hidden">
             <div
               className="absolute left-0 top-0 bottom-0 w-32
