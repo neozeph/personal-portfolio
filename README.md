@@ -1,16 +1,52 @@
-# React + Vite
+# 🚀 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio repository! This project serves as my digital resume, showcasing my skills, projects, and experience as a software developer.
 
-Currently, two official plugins are available:
+## 🌟 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is a modern, responsive personal portfolio built to highlight my journey in software development. It features a clean UI, interactive elements, and details about my technical background and the projects I've built.
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project was bootstrapped with Vite and React.
 
-## Expanding the ESLint configuration
+*   **Framework:** React
+*   **Build Tool:** Vite
+*   **Styling:** CSS / Tailwind CSS (Update as needed)
+*   **Deployment:** Vercel / Netlify / GitHub Pages (Update as needed)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js and npm (or yarn/pnpm) installed on your machine.
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your-username/personal-portfolio.git
+   ```
+2. Navigate to the project directory
+   ```sh
+   cd personal-portfolio
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start the development server
+   ```sh
+   npm run dev
+   ```
+
+## 📬 Contact
+
+*   **LinkedIn:** Your Name
+*   **GitHub:** @your-username
+*   **Email:** your.email@example.com
+
+---
+⭐️ Designed & Built by [Your Name]
