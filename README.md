@@ -44,9 +44,9 @@ Make sure you have Node.js and npm (or yarn/pnpm) installed on your machine.
 
 ## 📬 Contact
 
-*   **LinkedIn:** Your Name
-*   **GitHub:** @your-username
-*   **Email:** your.email@example.com
+*   **LinkedIn:** Josef Alanrey Soriente
+*   **GitHub:** @neozeph
+*   **Email:** josefalanrey@gmail.com
 
 ---
-⭐️ Designed & Built by [Your Name]
+⭐️ Designed & Built by [Josef Alanrey]
