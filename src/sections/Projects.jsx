@@ -6,7 +6,11 @@ const projects = [
     title: "BulSU COE Alumni Tracker Website",
     description: "The website is a responsive web application developed as a project in Web Engineering, designed with a simple and intuitive UI for redirecting alumni forms. It provides essential information about Bulacan State University College of Engineering while integrating thoughtful UI/UX design principles and implemented using React.js and TypeScript.",
     image: "/projects/project-1.png",
-    tags: ["React.js", "TypeScript", "NodeJS"],
+    tags: [
+      { name: "React.js", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+      { name: "TypeScript", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
+      { name: "Node.js", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" }
+    ],
     link: "https://bsu-alumni-tracker.vercel.app/",
     github: "https://github.com/neozeph/bsu-alumni-tracker",
   },
@@ -14,23 +18,34 @@ const projects = [
     title: "DevOps CSV Automation",
     description: "The DevOps CSV Automation project is an automated data processing pipeline for CSV files designed to streamline ingestion, cleaning, formatting, and visualization of raw sales data. It demonstrates a complete DevOps lifecycle through CI/CD integration, automated testing, linting, security scanning, and GitHub Actions-based automation for continuous data updates. The system reduces manual processing effort and errors while improving data quality, enabling faster and more reliable data-driven decision-making for analytics workflows.",
     image: "/projects/project-2.png",
-    tags: ["Python", "CSV Handling", "Automation", "GitHub Actions"],
+    tags: [
+      { name: "Python", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+      { name: "CSV Handling", icon: Lucide.FileText },
+      { name: "Automation", icon: Lucide.Settings },
+      { name: "GitHub Actions", icon: Lucide.GitBranch }
+    ],
     link: "https://github.com/neozeph/devops-csv-automation/tree/main/output",
     github: "https://github.com/neozeph/devops-csv-automation",
   },
   {
     title: "SkyLinx: Flight Booking App",
     description: "The mobile application is a flight booking platform designed with a smooth and responsive user interface, featuring intuitive layouts and navigation to enhance the overall user experience for searching, booking, and managing flights.",
-    image: "/projects/project-3.png",
-    tags: ["Flutter", "Dart", "Firebase",],
-    link: "https://bsu-alumni-tracker.vercel.app/",
-    github: "https://github.com/neozeph/bsu-alumni-tracker",
+    image: "/projects/project-3.jpg",
+    tags: [
+      { name: "Flutter", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" },
+      { name: "Dart", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" },
+      { name: "Firebase", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" }
+    ],
+    link: "https://drive.google.com/drive/folders/1zQktMOJ4q9SzBvVx4XZqcROd1UevD6MK?usp=sharing",
+    github: "https://github.com/asmodeus-p/skylinx",
   },
   {
     title: "ROKI: Room Checker",
     description: "The project is a room-checking system mockup for the College of Engineering, designed in Wix Studio as part of a Software Design project, featuring a user-friendly interface for monitoring and managing room availability.",
     image: "/projects/project-4.png",
-    tags: ["Wix Studio",],
+    tags: [
+      { name: "Wix Studio", icon: Lucide.LayoutTemplate }
+    ],
     link: "https://filesofjosef.wixstudio.com/softwaredesign",
     github: "https://filesofjosef.wixstudio.com/softwaredesign",
   },
@@ -48,8 +63,8 @@ export const Projects = () => {
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
             Featured Works
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            Projects driven
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-gradient">
+            Projects driven <br/>
             <span className="font-serif italic font-normal text-white">
               {" "}
               by curiosity and innovation.
@@ -117,9 +132,14 @@ export const Projects = () => {
                   {project.tags.map((tag, tagIdx) => (
                     <span
                       key={tagIdx}
-                      className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300"
+                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300"
                     >
-                      {tag}
+                      {tag.image ? (
+                        <img src={tag.image} alt={tag.name} className="w-3.5 h-3.5 object-contain" />
+                      ) : tag.icon ? (
+                        <tag.icon className="w-3.5 h-3.5" />
+                      ) : null}
+                      {tag.name}
                     </span>
                   ))}
                 </div>
@@ -128,13 +148,13 @@ export const Projects = () => {
           ))}
         </div>
 
-        {/* View All CTA */}
+        {/* View All CTA
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <AnimatedBorderButton>
             View All Projects
             <Lucide.ArrowUpRight className="w-5 h-5" />
           </AnimatedBorderButton>
-        </div>
+        </div> */}
       </div>
     </section>
   );

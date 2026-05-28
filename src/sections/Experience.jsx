@@ -73,7 +73,15 @@ const experiences = [
 export const Experience = () => {
   return (
     <section id="experience" className="py-32 relative overflow-hidden">
-      <div className="absolute top-1/2 left1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
+      {/* Moving Background Blobs */}
+      <div 
+        className="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] bg-primary/10 rounded-full blur-[100px] pointer-events-none"
+        style={{ animation: 'slow-drift 5s ease-in-out infinite' }}
+      />
+      <div 
+        className="absolute bottom-1/4 right-1/4 w-[25rem] h-[25rem] bg-light-blue/10 rounded-full blur-[100px] pointer-events-none"
+        style={{ animation: 'slow-drift 10s ease-in-out infinite reverse' }}
+      />
 
       <div className="container mx-auto px-6 relative z-10">
         {/**Section Header */}
@@ -81,8 +89,8 @@ export const Experience = () => {
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
             Career Journey
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            Experience that{" "}
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-gradient">
+            Experience that{" "} <br />
             <span className="font-serif italic font-normal text-white">
               {" "}
               reflects my growth.
@@ -124,7 +132,7 @@ export const Experience = () => {
                     <span className="text-sm text-primary font-medium">
                       {exp.period}
                     </span>
-                    <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
+                    <h3 className="text-xl font-semibold mt-2 text-light-blue">{exp.role}</h3>
                     <p className="text-muted-foreground">{exp.company}</p>
                     <p className="text-sm text-muted-foreground mt-4">
                       {exp.description}

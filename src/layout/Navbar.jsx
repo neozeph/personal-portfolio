@@ -30,9 +30,10 @@ export const Navbar = () => {
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a
           href="#"
-          className="text-xl font-bold tracking-tighter hover:text-primary"
+          className="text-xl font-bold tracking-tighter hover:text-primary flex items-center gap-2"
         >
-          JAFS<span className="text-primary">.</span>
+          <img src="/jafs.svg" alt="JAFS Logo" className="w-6 h-6 object-contain" />
+          <span>JAFS<span className="text-primary">.</span></span>
         </a>
 
         {/* Desktop Nav */}

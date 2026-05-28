@@ -12,6 +12,9 @@
   --color-secondary: #1f2830;
   --color-secondary-foreground: #20b2a6;
 
+  --color-blue: #223d79;
+  --color-light-blue: #a1dceb;
+
   --color-muted: #252e37;
   --color-muted-foreground: #7a8491;
 
@@ -181,6 +184,14 @@
     box-shadow: 0 0 40px
       color-mix(in srgb, var(--color-primary) 35%, transparent),
       0 0 80 px color-mix(in srgb, var(--color-primary) 25%, transparent);
+  }
+
+  .text-gradient {
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-light-blue), var(--color-blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
   }
 
 }
