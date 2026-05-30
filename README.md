@@ -12,8 +12,8 @@ This project was bootstrapped with Vite and React.
 
 *   **Framework:** React
 *   **Build Tool:** Vite
-*   **Styling:** CSS / Tailwind CSS (Update as needed)
-*   **Deployment:** Vercel / Netlify / GitHub Pages (Update as needed)
+*   **Styling:** CSS / Tailwind CSS
+*   **Deployment:** Vercel 
 
 ## 🚀 Getting Started
 
