@@ -27,7 +27,7 @@ Make sure you have Node.js and npm (or yarn/pnpm) installed on your machine.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your-username/personal-portfolio.git
+   git clone https://github.com/neozeph/personal-portfolio.git
    ```
 2. Navigate to the project directory
    ```sh

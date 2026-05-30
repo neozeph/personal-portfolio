@@ -37,6 +37,45 @@ const halfSkills = Math.ceil(skills.length / 2);
 const skillsRow1 = skills.slice(0, halfSkills);
 const skillsRow2 = skills.slice(halfSkills);
 
+const q1 = Math.ceil(skills.length / 4);
+const q2 = Math.ceil(skills.length / 2);
+const q3 = Math.ceil((skills.length * 3) / 4);
+
+const mobileRow1 = skills.slice(0, q1);
+const mobileRow2 = skills.slice(q1, q2);
+const mobileRow3 = skills.slice(q2, q3);
+const mobileRow4 = skills.slice(q3);
+
+const SkillRow = ({ skillsList, reverse, duration }) => (
+  <div
+    className="flex animate-marquee items-center gap-4 md:gap-6"
+    style={{
+      animationDirection: reverse ? "reverse" : "normal",
+      animationDuration: duration,
+    }}
+  >
+    {[...skillsList, ...skillsList, ...skillsList, ...skillsList].map((skill, idx) => (
+      <div
+        key={`${skill.name}-${idx}`}
+        className="flex-shrink-0 glass px-4 py-2 md:px-6 md:py-3 rounded-2xl flex items-center gap-2 md:gap-3 hover:glow-border hover:border-primary/50 transition-all duration-300 group"
+      >
+        {skill.image ? (
+          <img
+            src={skill.image}
+            alt={skill.name}
+            className="w-4 h-4 md:w-5 md:h-5 object-contain drop-shadow-sm group-hover:scale-110 transition-transform duration-300"
+          />
+        ) : (
+          <skill.icon className="w-4 h-4 md:w-5 md:h-5 text-muted-foreground/50 group-hover:text-primary transition-colors duration-300" />
+        )}
+        <span className="text-sm md:text-lg font-semibold text-muted-foreground/80 group-hover:text-primary transition-colors">
+          {skill.name}
+        </span>
+      </div>
+    ))}
+  </div>
+);
+
 export const Hero = () => {
 
   const [transformStyle, setTransformStyle] = useState("");
@@ -117,7 +156,7 @@ export const Hero = () => {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
                 Creating <span className="text-gradient glow-text">systems</span>
                 <br />
                 with clean and 
@@ -127,7 +166,7 @@ export const Hero = () => {
                 </span>
               </h1>
 
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
+              <p className="text-md md:text-lg lg:text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
                 Hello, I’m <span className="text-light-blue/90 text-bold">Josef Alanrey Soriente</span> — a Computer Engineer passionate about building practical and user-centered software solutions with React, Flutter, and Python, 
                 while continuously exploring cybersecurity, cloud, and software development.
               </p>
@@ -248,36 +287,18 @@ export const Hero = () => {
              bg-gradient-to-l from-background to-transparent z-10 pointer-events-none"
             />
             
-            <div className="flex flex-col gap-6 py-4">
-              <div className="flex animate-marquee items-center gap-6">
-                {[...skillsRow1, ...skillsRow1, ...skillsRow1, ...skillsRow1].map((skill, idx) => (
-                  <div key={`row1-${idx}`} className="flex-shrink-0 glass px-6 py-3 rounded-2xl flex items-center gap-3 hover:glow-border hover:border-primary/50 transition-all duration-300 group">
-                    {skill.image ? (
-                      <img src={skill.image} alt={skill.name} className="w-5 h-5 object-contain drop-shadow-sm group-hover:scale-110 transition-transform duration-300" />
-                    ) : (
-                      <skill.icon className="w-5 h-5 text-muted-foreground/50 group-hover:text-primary transition-colors duration-300" />
-                    )}
-                    <span className="text-lg font-semibold text-muted-foreground/80 group-hover:text-primary transition-colors">
-                      {skill.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="flex animate-marquee items-center gap-6" style={{ animationDirection: "reverse" }}>
-                {[...skillsRow2, ...skillsRow2, ...skillsRow2, ...skillsRow2].map((skill, idx) => (
-                  <div key={`row2-${idx}`} className="flex-shrink-0 glass px-6 py-3 rounded-2xl flex items-center gap-3 hover:glow-border hover:border-primary/50 transition-all duration-300 group">
-                    {skill.image ? (
-                      <img src={skill.image} alt={skill.name} className="w-5 h-5 object-contain drop-shadow-sm group-hover:scale-110 transition-transform duration-300" />
-                    ) : (
-                      <skill.icon className="w-5 h-5 text-muted-foreground/50 group-hover:text-primary transition-colors duration-300" />
-                    )}
-                    <span className="text-lg font-semibold text-muted-foreground/80 group-hover:text-primary transition-colors">
-                      {skill.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
+            {/* Desktop View: 2 Rows */}
+            <div className="hidden md:flex flex-col gap-6 py-4">
+              <SkillRow skillsList={skillsRow1} duration="15s" />
+              <SkillRow skillsList={skillsRow2} reverse duration="15s" />
+            </div>
+
+            {/* Mobile View: 4 Rows */}
+            <div className="flex md:hidden flex-col gap-4 py-4">
+              <SkillRow skillsList={mobileRow1} duration="10s" />
+              <SkillRow skillsList={mobileRow2} reverse duration="10s" />
+              <SkillRow skillsList={mobileRow3} duration="10s" />
+              <SkillRow skillsList={mobileRow4} reverse duration="10s" />
             </div>
           </div>
         </div>
