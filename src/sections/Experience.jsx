@@ -132,7 +132,7 @@ export const Experience = () => {
                     <span className="text-sm text-primary font-medium">
                       {exp.period}
                     </span>
-                    <h3 className="text-xl font-semibold mt-2 text-light-blue">{exp.role}</h3>
+                    <h3 className="text-xl font-semibold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-primary to-light-blue">{exp.role}</h3>
                     <p className="text-muted-foreground">{exp.company}</p>
                     <p className="text-sm text-muted-foreground mt-4">
                       {exp.description}

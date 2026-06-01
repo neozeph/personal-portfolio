@@ -49,6 +49,30 @@ const projects = [
     link: "https://filesofjosef.wixstudio.com/softwaredesign",
     github: "https://filesofjosef.wixstudio.com/softwaredesign",
   },
+    {
+    title: "CASHWIZZ: Expense Tracker",
+    description: "CashWizz is a desktop-based personal finance application developed as a second-year university project for an Object-Oriented Programming course. Built entirely in Python, it provides a simple graphical interface for users to log, manage, and review their daily expenses.",
+    image: "/projects/project-5.png",
+    tags: [
+      { name: "Python", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+      { name: "SQLite", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" },
+    ],
+    link: "https://github.com/neozeph/project-oop",
+    github: "https://github.com/neozeph/project-oop",
+  },
+  {
+    title: "SOLVEIT!",
+    description: "SOLVE IT! is a comprehensive Java GUI application built to solve complex mathematical problems using various Numerical Methods. Developed as a 2nd-year collegiate project for Data Structures, Algorithms, and Numerical Methods, it provides an interactive way to compute, visualize, and understand algorithm convergence.",
+    image: "/projects/project-6.png",
+    tags: [
+      { name: "Java", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
+      { name: "Java Swing", icon: Lucide.AppWindow },
+      { name: "mXparser", icon: Lucide.Calculator },
+      { name: "NetBeans IDE", icon: Lucide.Code2 },
+    ],
+    link: "https://github.com/neozeph/project-dsa-nm",
+    github: "https://github.com/neozeph/project-dsa-nm",
+  },
 ];
 
 export const Projects = () => {
@@ -122,7 +146,7 @@ export const Projects = () => {
               {/* Content */}
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
-                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-semibold transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-light-blue">
                     {project.title}
                   </h3>
                   <Lucide.ArrowUpRight
