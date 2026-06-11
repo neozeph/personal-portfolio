@@ -91,7 +91,7 @@ export const Certifications = () => {
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
             CERTIFICATIONS
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-gradient">
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-gradient leading-normal pb-2">
             Validating my
             <span className="font-serif italic font-normal text-white">
               {" "}

@@ -364,7 +364,7 @@ export const Hero = () => {
                   {/* Stats Badge */}
                   <div className="absolute -top-8 -left-6 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
                     <div className="text-lg font-bold text-gradient">
-                      GRADWAITING
+                      FRESH GRAD
                     </div>
                   </div>
                 </div>
