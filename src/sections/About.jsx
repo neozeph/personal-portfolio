@@ -45,12 +45,12 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I’m a graduating Computer Engineering student passionate about building practical and user-centered software solutions. 
+                I’m a fresh graduate of BS Computer Engineering passionate about building practical and user-centered software solutions. 
                 My interest in technology started from a curiosity about how systems work, 
                 which gradually grew into a passion for creating applications that are both functional and impactful.
               </p>
               <p>
-                I work with technologies such as React, Flutter, Python, and C++, developing responsive web and mobile applications while 
+                I work with technologies such as React, Python, and C++, developing responsive web and mobile applications while 
                 continuously improving my problem-solving and development skills. 
                 I enjoy transforming ideas into clean, efficient, and scalable systems that provide meaningful user experiences.
               </p>
