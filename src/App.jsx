@@ -6,6 +6,7 @@ import { Projects } from "@/sections/Projects";
 import { Experience } from "@/sections/Experience";
 import { Certifications } from "@/sections/Certifications";
 import { Contact } from "@/sections/Contact";
+import { Services } from "@/sections/Services";
 import { Footer } from "./layout/Footer";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Navbar />
     <main>
       <Hero />
+      <Services />
       <About />
       <Projects />
       <Experience />

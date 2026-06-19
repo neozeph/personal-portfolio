@@ -16,9 +16,34 @@ export const Button = ({
 
   return (
     <button className={classes} {...props}>
-      <span className={`relative flex items-center justify-center gap-2 rounded-full bg-blue text-primary-foreground ring-1 ring-inset ring-light-blue/30 group-hover:bg-blue/80 transition-colors w-full h-full ${sizeClasses[size]}`}>
-        {children}
-      </span>
+      <span
+  className={`relative overflow-hidden flex items-center justify-center gap-2 rounded-full bg-primary text-primary-foreground ring-1 ring-inset ring-light-blue/30 group-hover:bg-primary/80 transition-colors ${sizeClasses[size]}`}
+>
+  {/* Shine Effect */}
+  <span
+    className="
+      absolute
+      top-0
+      left-[-150%]
+      w-[80%]
+      h-full
+      bg-gradient-to-r
+      from-transparent
+      via-white/40
+      to-transparent
+      skew-x-[-20deg]
+      group-hover:left-[150%]
+      transition-all
+      duration-1000
+      ease-out
+      pointer-events-none
+    "
+  />
+
+<span className="relative z-10 flex items-center gap-2 whitespace-nowrap">
+    {children}
+  </span>
+</span>
     </button>
   );
 };

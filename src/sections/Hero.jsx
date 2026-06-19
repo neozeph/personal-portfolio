@@ -6,6 +6,7 @@ import {
   Download,
   Globe,
   GitBranch,
+  Mail
 } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
@@ -266,7 +267,7 @@ export const Hero = () => {
                 size="lg"
                 onClick={() => (window.location.href = "#contact")}
               >
-                Contact Me <ArrowRight className="w-5 h-5" />
+                Contact Me <Mail className="w-5 h-5" />
               </Button>
 
               <a href="/Josef_Alanrey_CV.pdf" download="Josef_Alanrey_CV.pdf">
