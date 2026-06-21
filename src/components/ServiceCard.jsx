@@ -13,14 +13,16 @@ export const ServiceCard = ({
     <div
       className="
         relative
-        w-[220px]
-        h-[340px]
+        w-[140px] h-[220px]
+sm:w-[170px] sm:h-[280px]
+xl:w-[220px] xl:h-[340px]
         cursor-pointer
         perspective-[1200px]
         transition-all
         duration-300
         hover:-translate-y-3
         hover:scale-105
+active:scale-95
       "
       onClick={() => setFlipped(!flipped)}
     >
@@ -128,21 +130,21 @@ flex-col
         >
           {/* Image */}
 
-          <div className="relative h-32 overflow-hidden flex-shrink-0">
-  <img
-    src={image}
-    alt={title}
-    className="
+          <div className="relative h-20 sm:h-24 lg:h-32 overflow-hidden flex-shrink-0">
+            <img
+              src={image}
+              alt={title}
+              className="
       w-full
       h-full
       object-cover
       brightness-70
       contrast-110
     "
-  />
+            />
 
-  <div
-    className="
+            <div
+              className="
       absolute
       inset-0
       bg-gradient-to-t
@@ -151,15 +153,26 @@ flex-col
       to-transparent
       pointer-events-none
     "
-  />
-</div>
+            />
+          </div>
 
           {/* Content */}
 
           <div className="p-5 flex flex-col flex-1">
-            <h3 className="text-base font-semibold mb-2">{title}</h3>
+            <h3 className="text-xs sm:text-sm lg:text-base font-semibold mb-2">
+              {title}
+            </h3>
 
-            <p className="text-xs leading-relaxed text-muted-foreground mb-4">
+            <p
+              className="
+    hidden
+    lg:block
+    text-xs
+    leading-relaxed
+    text-muted-foreground
+    mb-4
+  "
+            >
               {description}
             </p>
 
@@ -168,13 +181,13 @@ flex-col
                 <span
                   key={item}
                   className="
-                    px-2.5
-                    py-1
+                    px-1.5 py-0.5
+                    sm:px-2 sm:py-1
                     rounded-full
                     bg-primary/10
                     border
                     border-primary/20
-                    text-xs
+                    text-[9px] sm:text-[10px] lg:text-xs
                   "
                 >
                   {item}
