@@ -12,12 +12,12 @@ const certifications = [
     link: "#",
   },
   {
-    title: "Python Programming Fundamentals",
+    title: "Data Analyst Associate",
     issuer: "DataCamp",
     description:
-      "Mastered the basics of data analysis using SQL and Python, including core data structures, algorithms, and database management.",
+      "Demonstrated practical data analysis skills, including data preparation, exploratory analysis, data visualization, and interpreting results to support data-driven decisions.",
     image: "/certifications/cert-2.png",
-    tags: ["Python", "DataCamp"],
+    tags: ["Data Analysis", "SQL", "Data Visualization", "DataCamp"],
     link: "#",
   },
   {
@@ -47,7 +47,15 @@ const certifications = [
     tags: ["Cloud Computing", "Huawei"],
     link: "#",
   },
-
+  {
+    title: "Python Programming Fundamentals",
+    issuer: "DataCamp",
+    description:
+      "Mastered the basics of data analysis using SQL and Python, including core data structures, algorithms, and database management.",
+    image: "/certifications/cert-7.png",
+    tags: ["Python", "DataCamp"],
+    link: "#",
+  },
   {
     title: "GitHub Foundations",
     issuer: "DataCamp",
@@ -57,15 +65,7 @@ const certifications = [
     tags: ["Git", "GitHub"],
     link: "#",
   },
-  {
-    title: "Exploratory Data Analysis in SQL",
-    issuer: "DataCamp",
-    description:
-      "Learned essential version control concepts, repository management with Git/GitHub.",
-    image: "/certifications/cert-7.png",
-    tags: ["AI", "Machine Learning"],
-    link: "#",
-  },
+
   {
     title: "AI Fundamentals",
     issuer: "DataCamp",

@@ -1,71 +1,175 @@
 import * as Lucide from "lucide-react";
-import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+// import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
   {
-    title: "BulSU COE Alumni Tracker Website",
-    description: "The website is a responsive web application developed as a project in Web Engineering, designed with a simple and intuitive UI for redirecting alumni forms. It provides essential information about Bulacan State University College of Engineering while integrating thoughtful UI/UX design principles and implemented using React.js and TypeScript.",
+    title: "Akadex – Academic Productivity Tracker",
+    description:
+      "A full-stack academic productivity platform that helps students manage semesters, calculate their GWA, organize tasks, and stay focused using a persistent Pomodoro timer. It features secure authentication, responsive dashboards, academic analytics, light and dark themes, and automated testing.",
     image: "/projects/project-1.png",
     tags: [
-      { name: "React.js", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
-      { name: "TypeScript", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
-      { name: "Node.js", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" }
+      {
+        name: "Next.js",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "TypeScript",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "Supabase",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+      },
+    ],
+    link: "https://akadex.vercel.app/",
+    github: "https://github.com/neozeph/akadex",
+  },
+  {
+    title: "Commitment – Habit Tracker",
+    description:
+      "A minimalist habit-tracking application inspired by GitHub’s contribution graph. Users can create and manage habits, record daily completions, monitor current and longest streaks, and visualize a full year of progress. Data and theme preferences are persisted locally for a fast, account-free experience.",
+    image: "/projects/project-2.png",
+    tags: [
+      {
+        name: "React.js",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "JavaScript",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "Vite",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+      },
+    ],
+    link: "https://commit-ment.vercel.app/",
+    github: "https://github.com/neozeph/commitment",
+  },
+  {
+    title: "BulSU COE Alumni Tracker Website",
+    description:
+      "The website is a responsive web application developed as a project in Web Engineering, designed with a simple and intuitive UI for redirecting alumni forms. It provides essential information about Bulacan State University College of Engineering while integrating thoughtful UI/UX design principles and implemented using React.js and TypeScript.",
+    image: "/projects/project-3.png",
+    tags: [
+      {
+        name: "React.js",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "TypeScript",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Node.js",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      },
     ],
     link: "https://bsu-alumni-tracker.vercel.app/",
     github: "https://github.com/neozeph/bsu-alumni-tracker",
   },
   {
     title: "DevOps CSV Automation",
-    description: "The DevOps CSV Automation project is an automated data processing pipeline for CSV files designed to streamline ingestion, cleaning, formatting, and visualization of raw sales data. It demonstrates a complete DevOps lifecycle through CI/CD integration, automated testing, linting, security scanning, and GitHub Actions-based automation for continuous data updates. The system reduces manual processing effort and errors while improving data quality, enabling faster and more reliable data-driven decision-making for analytics workflows.",
-    image: "/projects/project-2.png",
+    description:
+      "The DevOps CSV Automation project is an automated data processing pipeline for CSV files designed to streamline ingestion, cleaning, formatting, and visualization of raw sales data. It demonstrates a complete DevOps lifecycle through CI/CD integration, automated testing, linting, security scanning, and GitHub Actions-based automation for continuous data updates. The system reduces manual processing effort and errors while improving data quality, enabling faster and more reliable data-driven decision-making for analytics workflows.",
+    image: "/projects/project-4.png",
     tags: [
-      { name: "Python", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+      {
+        name: "Python",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      },
       { name: "CSV Handling", icon: Lucide.FileText },
       { name: "Automation", icon: Lucide.Settings },
-      { name: "GitHub Actions", icon: Lucide.GitBranch }
+      { name: "GitHub Actions", icon: Lucide.GitBranch },
     ],
     link: "https://github.com/neozeph/devops-csv-automation/tree/main/output",
     github: "https://github.com/neozeph/devops-csv-automation",
   },
   {
     title: "SkyLinx: Flight Booking App",
-    description: "The mobile application is a flight booking platform designed with a smooth and responsive user interface, featuring intuitive layouts and navigation to enhance the overall user experience for searching, booking, and managing flights.",
-    image: "/projects/project-3.jpg",
+    description:
+      "The mobile application is a flight booking platform designed with a smooth and responsive user interface, featuring intuitive layouts and navigation to enhance the overall user experience for searching, booking, and managing flights.",
+    image: "/projects/project-5.jpg",
     tags: [
-      { name: "Flutter", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" },
-      { name: "Dart", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" },
-      { name: "Firebase", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" }
+      {
+        name: "Flutter",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+      },
+      {
+        name: "Dart",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg",
+      },
+      {
+        name: "Firebase",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+      },
     ],
     link: "https://drive.google.com/drive/folders/1zQktMOJ4q9SzBvVx4XZqcROd1UevD6MK?usp=sharing",
     github: "https://github.com/asmodeus-p/skylinx",
   },
   {
     title: "ROKI: Room Checker",
-    description: "The project is a room-checking system mockup for the College of Engineering, designed in Wix Studio as part of a Software Design project, featuring a user-friendly interface for monitoring and managing room availability.",
-    image: "/projects/project-4.png",
-    tags: [
-      { name: "Wix Studio", icon: Lucide.LayoutTemplate }
-    ],
+    description:
+      "The project is a room-checking system mockup for the College of Engineering, designed in Wix Studio as part of a Software Design project, featuring a user-friendly interface for monitoring and managing room availability.",
+    image: "/projects/project-6.png",
+    tags: [{ name: "Wix Studio", icon: Lucide.LayoutTemplate }],
     link: "https://filesofjosef.wixstudio.com/softwaredesign",
     github: "https://filesofjosef.wixstudio.com/softwaredesign",
   },
-    {
+  {
     title: "CASHWIZZ: Expense Tracker",
-    description: "CashWizz is a desktop-based personal finance application developed as a second-year university project for an Object-Oriented Programming course. Built entirely in Python, it provides a simple graphical interface for users to log, manage, and review their daily expenses.",
-    image: "/projects/project-5.png",
+    description:
+      "CashWizz is a desktop-based personal finance application developed as a second-year university project for an Object-Oriented Programming course. Built entirely in Python, it provides a simple graphical interface for users to log, manage, and review their daily expenses.",
+    image: "/projects/project-7.png",
     tags: [
-      { name: "Python", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-      { name: "SQLite", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" },
+      {
+        name: "Python",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      },
+      {
+        name: "SQLite",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
+      },
     ],
     link: "https://github.com/neozeph/project-oop",
     github: "https://github.com/neozeph/project-oop",
   },
   {
     title: "SOLVEIT!",
-    description: "SOLVE IT! is a comprehensive Java GUI application built to solve complex mathematical problems using various Numerical Methods. Developed as a 2nd-year collegiate project for Data Structures, Algorithms, and Numerical Methods, it provides an interactive way to compute, visualize, and understand algorithm convergence.",
-    image: "/projects/project-6.png",
+    description:
+      "SOLVE IT! is a comprehensive Java GUI application built to solve complex mathematical problems using various Numerical Methods. Developed as a 2nd-year collegiate project for Data Structures, Algorithms, and Numerical Methods, it provides an interactive way to compute, visualize, and understand algorithm convergence.",
+    image: "/projects/project-8.png",
     tags: [
-      { name: "Java", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
+      {
+        name: "Java",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+      },
       { name: "Java Swing", icon: Lucide.AppWindow },
       { name: "mXparser", icon: Lucide.Calculator },
       { name: "NetBeans IDE", icon: Lucide.Code2 },
@@ -88,14 +192,15 @@ export const Projects = () => {
             Featured Works
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-gradient leading-normal pb-2">
-            Projects driven <br/>
+            Projects driven <br />
             <span className="font-serif italic font-normal text-white">
               {" "}
               by curiosity and innovation.
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A growing collection of software, systems, and ideas designed to create meaningful experiences and impact.
+            A growing collection of software, systems, and ideas designed to
+            create meaningful experiences and impact.
           </p>
         </div>
 
@@ -146,7 +251,7 @@ export const Projects = () => {
               {/* Content */}
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
-              <h3 className="text-xl font-semibold transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-light-blue">
+                  <h3 className="text-xl font-semibold transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-light-blue">
                     {project.title}
                   </h3>
                   <Lucide.ArrowUpRight
@@ -166,7 +271,11 @@ export const Projects = () => {
                       className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300"
                     >
                       {tag.image ? (
-                        <img src={tag.image} alt={tag.name} className="w-3.5 h-3.5 object-contain" />
+                        <img
+                          src={tag.image}
+                          alt={tag.name}
+                          className="w-3.5 h-3.5 object-contain"
+                        />
                       ) : tag.icon ? (
                         <tag.icon className="w-3.5 h-3.5" />
                       ) : null}

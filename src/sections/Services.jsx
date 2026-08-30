@@ -1,55 +1,54 @@
 import { ServiceCard } from "@/components/ServiceCard";
 import { Code2, Workflow, Palette, Cpu, Cloud, Users } from "lucide-react";
 
-export const services = [
+const services = [
   {
     icon: Code2,
     image: "/services/software.webp",
-    title: "Software Development",
+    title: "Web Development",
     description:
-      "Building responsive web applications and scalable software solutions.",
-    tech: ["React", "Python", "PHP", "MySQL"],
+      "Building responsive, accessible, and maintainable web applications from interface to database.",
+    tech: ["React", "Next.js", "Node.js", "PostgreSQL"],
   },
-
   {
     icon: Workflow,
     image: "/services/automation.webp",
-    title: "Process Automation",
-    description: "Automating workflows and streamlining operations.",
+    title: "Workflow Automation",
+    description:
+      "Creating practical automations that reduce repetitive work and connect everyday tools.",
     tech: ["Python", "GitHub Actions"],
   },
-
   {
     icon: Palette,
     image: "/services/design.webp",
-    title: "UI Design & Layouting",
+    title: "UI/UX & Visual Design",
     description:
-      "Designing interfaces, marketing materials, and digital experiences.",
-    tech: ["Figma", "Canva", "Illustrator"],
+      "Transforming ideas into clear interfaces, responsive layouts, and purposeful visual content.",
+    tech: ["Figma", "Canva", "Illustrator", "Tailwind CSS"],
   },
-
   {
     icon: Cpu,
     image: "/services/embedded.webp",
     title: "Embedded Systems",
-    description: "Integrating hardware and software solutions.",
-    tech: ["C++", "Python"],
+    description:
+      "Developing hardware and software integrations for automation, control, and monitoring systems.",
+    tech: ["C++", "Python", "Raspberry Pi", "Microcontrollers"],
   },
-
   {
     icon: Cloud,
     image: "/services/cloud.webp",
-    title: "DevOps & Cloud",
-    description: "Exploring Linux, Docker, AWS, and deployment pipelines.",
-    tech: ["Docker", "Linux", "AWS"],
+    title: "Deployment & DevOps",
+    description:
+      "Setting up application deployments, containerized environments, and automated development workflows.",
+    tech: ["Docker", "Linux Basics", "CI/CD"],
   },
-
   {
     icon: Users,
     image: "/services/leadership.webp",
-    title: "Leadership",
-    description: "Leading teams and collaborating on impactful projects.",
-    tech: ["Leadership", "Planning"],
+    title: "Project Leadership",
+    description:
+      "Organizing teams, coordinating technical projects, and turning shared goals into actionable plans.",
+    tech: ["Team Leadership", "Planning", "Documentation"],
   },
 ];
 
@@ -71,7 +70,6 @@ export const Services = () => {
               {" "}
               digital solutions.
             </span>
-            
           </h2>
 
           <p className="mt-6 text-muted-foreground text-lg animation-delay-100">
@@ -85,14 +83,20 @@ export const Services = () => {
 
         <div
           className="
-    flex
-    flex-wrap
-    justify-center
-    gap-4 animate-fade-in animation-delay-200
+    mx-auto
+    grid
+    max-w-[1440px]
+    grid-cols-2
+    gap-3
+    sm:grid-cols-3
+    sm:gap-4
+    xl:grid-cols-6
+    animate-fade-in
+    animation-delay-200
   "
         >
-          {services.map((service, index) => (
-            <ServiceCard key={index} {...service} delay={index} />
+          {services.map((service) => (
+            <ServiceCard key={service.title} {...service} />
           ))}
         </div>
       </div>

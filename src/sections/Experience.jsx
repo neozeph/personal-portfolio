@@ -1,10 +1,27 @@
 const experiences = [
   {
+    period: "July 2026 - Present",
+    role: "Software Development Training",
+    company: "Independent Professional Development",
+    description:
+      "Strengthening my full-stack development expertise by building production-oriented projects, designing REST APIs, working with relational databases, implementing automated tests, and practicing modern deployment workflows.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Node.js",
+      "REST APIs",
+      "PostgreSQL",
+      "Software Testing",
+      "CI/CD",
+    ],
+    current: true,
+  },
+  {
     period: "August 2022 - June 2026",
     role: "Bachelor of Science in Computer Engineering",
     company: "Bulacan State University Main Campus",
     description:
-      "Maintained a GPA of 1.13 and consistently earned President’s Lister recognition from 2023–2026, while building strong foundations in software development, algorithms, cloud computing, and operating systems.",
+      "Maintained a GPA of 1.13, Graduated as Summa Cum Laude, and consistently earned President’s Lister recognition from 2023–2026, while building strong foundations in software development, algorithms, cloud computing, and operating systems.",
     technologies: [
       "Object-Oriented Programming",
       "Data Structures and Algorithms",
@@ -13,7 +30,7 @@ const experiences = [
       "Embedded Systems",
       "DevOps",
     ],
-    current: true,
+    current: false,
   },
   {
     period: "June 2025 - July 2025",
@@ -74,13 +91,13 @@ export const Experience = () => {
   return (
     <section id="experience" className="py-32 relative overflow-hidden">
       {/* Moving Background Blobs */}
-      <div 
+      <div
         className="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] bg-primary/10 rounded-full blur-[100px] pointer-events-none"
-        style={{ animation: 'slow-drift 5s ease-in-out infinite' }}
+        style={{ animation: "slow-drift 5s ease-in-out infinite" }}
       />
-      <div 
+      <div
         className="absolute bottom-1/4 right-1/4 w-[25rem] h-[25rem] bg-light-blue/10 rounded-full blur-[100px] pointer-events-none"
-        style={{ animation: 'slow-drift 10s ease-in-out infinite reverse' }}
+        style={{ animation: "slow-drift 10s ease-in-out infinite reverse" }}
       />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -90,7 +107,7 @@ export const Experience = () => {
             Career Journey
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-gradient ">
-            Experience that{" "} <br />
+            Experience that <br />
             <span className="font-serif italic font-normal text-white leading-normal pb-2">
               {" "}
               reflects my growth.
@@ -98,8 +115,10 @@ export const Experience = () => {
           </h2>
 
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A timeline of my journey from a curious beginner to a driven Computer Engineering student, developing skills through leadership roles, collaboration, 
-            and hands-on work in building meaningful systems and solutions.
+            A timeline of my journey from a curious beginner to a driven
+            Computer Engineering student, developing skills through leadership
+            roles, collaboration, and hands-on work in building meaningful
+            systems and solutions.
           </p>
         </div>
 
@@ -132,7 +151,9 @@ export const Experience = () => {
                     <span className="text-sm text-primary font-medium">
                       {exp.period}
                     </span>
-                    <h3 className="text-xl font-semibold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-primary to-light-blue">{exp.role}</h3>
+                    <h3 className="text-xl font-semibold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-primary to-light-blue">
+                      {exp.role}
+                    </h3>
                     <p className="text-muted-foreground">{exp.company}</p>
                     <p className="text-sm text-muted-foreground mt-4">
                       {exp.description}
